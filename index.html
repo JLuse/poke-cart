@@ -42,7 +42,7 @@
               <td class="quantity">1</td>
               <td class="cards-total"></td>
               <td>
-                <button class="btn btn-danger btn-sm">Remove</button>
+                <button class="btn btn-danger btn-sm remove-btn">Remove</button>
               </td>
             </tr>
             <tr>
@@ -52,7 +52,7 @@
               <td class="quantity">1</td>
               <td class="cards-total"></td>
               <td>
-                <button class="btn btn-danger btn-sm">Remove</button>
+                <button class="btn btn-danger btn-sm remove-btn">Remove</button>
               </td>
             </tr>
             <tr>
@@ -62,7 +62,7 @@
               <td class="quantity">2</td>
               <td class="cards-total"></td>
               <td>
-                <button class="btn btn-danger btn-sm">Remove</button>
+                <button class="btn btn-danger btn-sm remove-btn">Remove</button>
               </td>
             </tr>
           </tbody>
@@ -71,8 +71,8 @@
         <form class="col-12 mt-2 mb-4" id="addCard">
           <input class="mx-2" name="pokemon" type="text" placeholder="Pokemon" required/>
           <input class="mx-2" name="type" type="text" placeholder="Card Type"/>
-          <input class="mx-2" name="quantity" type="number" placeholder="Quantity"/>
           <input class="mx-2" name="bidPrice" type="number" placeholder="Biding Price"/>
+          <input class="mx-2" name="quantity" type="number" placeholder="Quantity"/>
           <button class="btn btn-primary btn-sm">add</button>
         </form>
 
@@ -80,12 +80,9 @@
           <button class="btn btn-primary">Estimate Total</button>
         </div>
 
-          <tfoot>
-            <tr>
-              <td colspan="3" class="text-end"></td>
-              <td colspan="2"><strong class="grand-total">Total:</strong></td>
-            </tr>
-          </tfoot>
+          <div class="col-12">
+            <h3>Pokecart Total: $<span id="grand-total"></span></h3>
+          </div>
       </section>
 
        <footer>

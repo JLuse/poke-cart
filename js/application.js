@@ -8,5 +8,8 @@ $(document).ready(function () {
     cartTotal += totalAmountForCards
   });
 
-  $('.grand-total').append(cartTotal)
+  $('#grand-total').append(cartTotal)
+  $('.remove-btn').on('click', function() {
+    $(this).closest('tr').remove();
+  })
 });
