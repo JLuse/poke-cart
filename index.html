@@ -20,6 +20,7 @@
 
       <header>
         <h1>PokeCart: Shopping cart for rare pokemon cards</h1>
+        <p>Put your price in to see how much you might get!</p>
       </header>
 
       <section>
@@ -38,7 +39,7 @@
             <tr>
               <td class="pokemon-name">Charzard</td>
               <td class="card-type">1st Edition Holo</td>
-              <td class="asking-price">420000</td>
+              <td class="asking-price">$<span class="dollar-price">420000</span></td>
               <td class="quantity"><input type="number" value="1"/></td>
               <td class="cards-total"></td>
               <td>
@@ -48,7 +49,7 @@
             <tr>
               <td class="pokemon-name">Blastoise</td>
               <td class="card-type">Galaxy Star Holo</td>
-              <td class="asking-price">360000</td>
+              <td class="asking-price">$<span class="dollar-price">360000</span></td>
               <td class="quantity"><input type="number" value="1"/></td>
               <td class="cards-total"></td>
               <td>
@@ -58,7 +59,7 @@
             <tr>
               <td class="pokemon-name">Venusaur</td>
               <td class="card-type">Japanese Base Set Holo</td>
-              <td class="asking-price">55000</td>
+              <td class="asking-price">$<span class="dollar-price">55000</span></td>
               <td class="quantity"><input type="number" value="2"/></td>
               <td class="cards-total"></td>
               <td>
@@ -71,9 +72,9 @@
         <form class="col-12 mt-2 mb-4" id="addCard">
           <input class="mx-2" name="pokemon" type="text" placeholder="Pokemon" required/>
           <input class="mx-2" name="type" type="text" placeholder="Card Type"/>
-          <input class="mx-2" name="bidPrice" type="number" placeholder="Biding Price"/>
+          <input class="mx-2" name="asking-price" type="number" placeholder="Biding Price"/>
           <input class="mx-2" name="quantity" type="number" placeholder="Quantity"/>
-          <button class="btn btn-primary btn-sm">add</button>
+          <button id="addCard" class="btn btn-primary btn-sm">add</button>
         </form>
 
         <div class="text-end">
