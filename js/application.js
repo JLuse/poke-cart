@@ -42,15 +42,6 @@ $(document).ready(function () {
     let askingPrice = $(this).children('[name=asking-price]').val()
     let quantity = $(this).children('[name=quantity]').val()
 
-  //   $('tbody').append('<tr>' +
-  //   '<td class="pokemon-name">' + pokemon + '</td>' +
-  //   '<td class="card-type">' + cardType + '</td>' +
-  //   '<td class="asking-price">$<span class="dollar-price">' + askingPrice + '<span/></td>' +
-  //   '<td class="quantity"><input type="number" value="' + quantity + '" /></td>' +
-  //   '<td class="marketValue"></td>' +
-  //   '<td class="profit"></td>' +
-  //   '<td><button class="btn btn-light btn-sm remove">remove</button></td>' +
-  // '</tr>');
   $('tbody').append(
     `<tr>
       <td class="pokemon-name">${pokemon}</td>
